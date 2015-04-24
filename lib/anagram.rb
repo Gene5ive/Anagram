@@ -8,7 +8,7 @@ class String
 
     argument_array = argument.split(" ")
 
-    anagram = [ ]
+    anagram = []
 
     argument_array.each do |word|
       letter_array = word.split("")
