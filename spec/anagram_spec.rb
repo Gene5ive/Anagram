@@ -4,14 +4,12 @@ require 'pry'
 
 describe('String#anagram')do
 
-    it('takes in one word as receiver and a string as an argument and returns potential anagram')do
+  it('takes a single-receiver string and a single-argument string to return a potential anagram')do
     expect("cat".anagram("atc")).to(eq("atc"))
-    end
+  end
 
 
-   it('takes in one word as receiver and a string as an argument and returns potential anagram')do
-   expect("mote".anagram("tree leaf tome")).to(eq("tome"))
-   end
-
-
+  it('takes a single-receiver string and a multiple-argument string to return a potential anagram')do
+    expect("mote".anagram("tree leaf tome")).to(eq("tome"))
+  end
 end
